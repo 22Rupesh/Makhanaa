@@ -1,0 +1,59 @@
+{
+    "tech_stack": [
+        "TypeScript",
+        "Next.js",
+        "Tailwind CSS",
+        "React"
+    ],
+    "features": [
+        {
+            "name": "Homepage",
+            "description": "Dual gateway landing page with toggle for Consumer and Business portals",
+            "files": [
+                "app/page.tsx",
+                "app/layout.tsx",
+                "app/globals.css"
+            ]
+        },
+        {
+            "name": "Consumer Portal",
+            "description": "D2C shopping section with product listing, details, and quiz. Global Search in Navbar.",
+            "files": [
+                "app/consumer/page.tsx",
+                "app/consumer/layout.tsx",
+                "app/consumer/product/[id]/page.tsx"
+            ]
+        },
+        {
+            "name": "Authentication",
+            "description": "Login and Registration pages with mock authentication logic",
+            "files": [
+                "app/login/page.tsx",
+                "app/register/page.tsx"
+            ]
+        },
+        {
+            "name": "Recipe Hub",
+            "description": "Recipe listing page with generated images",
+            "files": [
+                "app/consumer/recipes/page.tsx"
+            ]
+        },
+        {
+            "name": "Cart System",
+            "description": "Shopping cart functionality using React Context with Subscription support",
+            "files": [
+                "lib/cart-context.tsx"
+            ]
+        },
+        {
+            "name": "Business Portal",
+            "description": "B2B section for wholesale with pricing calculator, compliance docs, and Sample Kit form. Global Search in Navbar.",
+            "files": [
+                "app/business/page.tsx",
+                "app/business/layout.tsx",
+                "app/business/sample-kit/page.tsx"
+            ]
+        }
+    ]
+}
