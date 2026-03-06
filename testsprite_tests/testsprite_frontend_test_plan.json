@@ -1,0 +1,430 @@
+[
+  {
+    "id": "TC001",
+    "title": "Verify Dual-Gateway Homepage Navigation",
+    "description": "Ensure the homepage displays two distinct gateways for Consumer and Business portals, and navigation buttons correctly route users to respective portals.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open the homepage URL"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the presence of 'Shop for Myself' and 'Source for Business' gateway options"
+      },
+      {
+        "type": "action",
+        "description": "Click on 'Shop for Myself' button"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm navigation to Consumer Portal main page"
+      },
+      {
+        "type": "action",
+        "description": "Return to homepage"
+      },
+      {
+        "type": "action",
+        "description": "Click on 'Source for Business' button"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm navigation to Business Portal main page"
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "Complete Snack Personality Quiz and Validate Recommendations",
+    "description": "Verify that the snack personality quiz completes successfully and returns accurate, relevant product recommendations tailored to user responses.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to Consumer Portal"
+      },
+      {
+        "type": "action",
+        "description": "Start the snack personality quiz"
+      },
+      {
+        "type": "action",
+        "description": "Answer all quiz questions with valid inputs"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify quiz completes without errors"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify personalized product recommendations are displayed based on quiz answers"
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "Validate Subscription Model Functionality",
+    "description": "Check that users can subscribe with recurring delivery, receive a 15% discount, and manage subscription controls such as pause and cancel.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to a consumer product page"
+      },
+      {
+        "type": "action",
+        "description": "Select subscription purchase option"
+      },
+      {
+        "type": "action",
+        "description": "Complete subscription checkout process"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify 15% subscription discount is applied correctly in order summary"
+      },
+      {
+        "type": "action",
+        "description": "Access user subscription management dashboard"
+      },
+      {
+        "type": "action",
+        "description": "Pause the subscription"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm subscription is paused successfully"
+      },
+      {
+        "type": "action",
+        "description": "Cancel the subscription"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm subscription cancellation processed and user notified"
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "Check Compliance Vault Certification Download and Filters",
+    "description": "Verify compliance vault allows filtering certifications and lab reports and enables downloading updated documents within 2 seconds load time.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Login as B2B user and navigate to Compliance Vault"
+      },
+      {
+        "type": "action",
+        "description": "Apply filters by certification type and date"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm filtered list updates correctly and promptly"
+      },
+      {
+        "type": "action",
+        "description": "Download a certification document"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify document downloads successfully within 2 seconds"
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "Business Sample Kit Order Flow Validation",
+    "description": "Verify that B2B users can order $50 sample kits with input validation, payment processing, and receive automated confirmation emails including refund incentive details.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to Business Portal sample kit order page"
+      },
+      {
+        "type": "action",
+        "description": "Fill order form with valid inputs and payment details"
+      },
+      {
+        "type": "assertion",
+        "description": "Check validation prevents empty or incorrect inputs"
+      },
+      {
+        "type": "action",
+        "description": "Submit the order"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify payment is processed successfully"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify order confirmation screen is shown"
+      },
+      {
+        "type": "assertion",
+        "description": "Check automated confirmation email with refund incentive is received"
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "Bulk Pricing Calculator Dynamic Update and Quote Generation",
+    "description": "Ensure bulk pricing calculator updates prices correctly based on quantity input and sends accurate quote emails to the user.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to Bulk Pricing Calculator in Business Portal"
+      },
+      {
+        "type": "action",
+        "description": "Input various order quantities including edge values (minimum, maximum)"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify pricing tiers and totals update dynamically with inputs"
+      },
+      {
+        "type": "action",
+        "description": "Request a price quote"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm correct quote email is received promptly"
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Real-time Order Tracking Dashboard Functionality",
+    "description": "Verify order tracking dashboard shows real-time shipment status and delivers notifications for key shipment stages timely and accurately.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Login as B2B user and open order tracking dashboard"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify current order shipping status is accurately displayed"
+      },
+      {
+        "type": "action",
+        "description": "Simulate order shipment status updates"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm dashboard updates order status in real-time"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify notification alerts for key shipment stages are sent to user"
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Private Label Configurator Mockup and Minimum Order Enforcement",
+    "description": "Validate that users can customize branding options, preview accurate 3D mockups, and minimum order quantity calculators enforce limits appropriately.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to Private Label Configurator"
+      },
+      {
+        "type": "action",
+        "description": "Upload logos and select branding options"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify 3D mockup updates in accordance with selected options"
+      },
+      {
+        "type": "action",
+        "description": "Input various order quantities including below minimum threshold"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm minimum order quantity restrictions are enforced with relevant error messages"
+      },
+      {
+        "type": "action",
+        "description": "Generate and approve quote"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify successful quote generation and approval flow"
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "User Authentication and Secure Account Management",
+    "description": "Test user registration, login, password reset flows, and role-based access control with email verification to ensure secure authentication and proper dashboard access.",
+    "category": "security",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Attempt registration with valid email and password"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify email verification link is sent and account is activated only after verification"
+      },
+      {
+        "type": "action",
+        "description": "Login with verified credentials"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify successful login and redirection to appropriate dashboard (Consumer or Business) based on role"
+      },
+      {
+        "type": "action",
+        "description": "Initiate password reset with registered email"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify password reset email is received and reset works correctly"
+      },
+      {
+        "type": "action",
+        "description": "Attempt login with invalid credentials"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify login fails with proper error messages"
+      },
+      {
+        "type": "action",
+        "description": "Attempt access to restricted pages without proper role"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify access is denied or redirected appropriately"
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "Global Search Functionality and Performance",
+    "description": "Ensure global search returns relevant results across products, recipes, and compliance documents with functional filters and autocomplete suggestions, performing within acceptable response times.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Enter partial and full keywords in global search input"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify relevant autocomplete suggestions appear promptly"
+      },
+      {
+        "type": "action",
+        "description": "Execute search"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm results include correct categories: products, recipes, compliance documents"
+      },
+      {
+        "type": "action",
+        "description": "Apply filters on search results by category"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify results update according to selected filters"
+      },
+      {
+        "type": "assertion",
+        "description": "Measure and verify search results load within 500ms"
+      }
+    ]
+  },
+  {
+    "id": "TC011",
+    "title": "Referral Program Tracking and Credit Application",
+    "description": "Verify referral program properly tracks referrals, associates them with user accounts, and applies credits correctly in D2C consumer accounts.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Register user A and generate referral link"
+      },
+      {
+        "type": "action",
+        "description": "Register user B using referral link"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm referral is recorded and linked to user A"
+      },
+      {
+        "type": "action",
+        "description": "User B completes qualifying purchase"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify credit is applied correctly to user A's account"
+      },
+      {
+        "type": "action",
+        "description": "Check referral dashboard or credit balance for user A"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify credit details and history are accurate"
+      }
+    ]
+  },
+  {
+    "id": "TC012",
+    "title": "Performance Benchmark Testing",
+    "description": "Verify platform meets performance benchmarks including page load times under 2 seconds, API response times under 500ms, and platform uptime of 99.9%.",
+    "category": "performance",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Load key pages: Homepage, Consumer Portal, Business Portal, Private Label Portal, Compliance Vault"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm each page loads in under 2 seconds on standard network conditions"
+      },
+      {
+        "type": "action",
+        "description": "Perform API calls related to product search, compliance document retrieval, order placement"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify API response times are under 500 milliseconds"
+      },
+      {
+        "type": "action",
+        "description": "Monitor system uptime over defined testing period"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm uptime meets or exceeds 99.9%"
+      }
+    ]
+  }
+]

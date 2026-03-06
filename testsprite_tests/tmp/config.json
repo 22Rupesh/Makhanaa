@@ -1,0 +1,18 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:3000",
+  "executionArgs": {
+    "projectName": "makhana-product-requirements",
+    "projectPath": "c:/Users/DELL/Desktop/makhana-product-requirements",
+    "testIds": [
+      "TC003"
+    ],
+    "additionalInstruction": "Regenerate TC003 only. Verify that clicking 'Pause' updates the status to 'PAUSED' and shows 'Subscription Paused Successfully'. Verify that clicking 'Cancel' removes the subscription or shows 'Subscription Cancelled Successfully'. Use the 'Dashboard' link in navbar to access the page after login.",
+    "envs": {
+      "API_KEY": "sk-user-Yj_B1eIgo07TLibwhtZefkHqvpo7kmSZg2FmG1RQkvVnrwXeyTZ1Mz77kMP7dB4JUPHfc3i3xznfoYGS76L-KCnUaFyU6H8PY28qBVu4Qx-ieOXml6hJMEPjyOaX3ori5ng"
+    }
+  },
+  "proxy": "http://1c0be9a4-8097-4c82-a5a2-02abfb251342:qAOI4NVLfXSyCycaMkEoSAJVQAG12TUu@tun.testsprite.com:8080"
+}
